@@ -1,0 +1,203 @@
+.career-list {
+    margin-top: 50px;
+    border-top: 1px solid #e5e5e5;
+    @include media('<=md') {
+        margin-top: 18px;       
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e5e5e5;
+        padding-top: 27px;
+        padding-bottom: 26px;
+        &.is-hidden {
+            display: none;
+        }
+        @include media('<=md') {
+            padding-top: 23px;
+            padding-bottom: 16px;       
+        }
+    }
+    &.is-hidden {
+        display: none;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        @include media('<=md') {
+            margin-top: 10px;       
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 0 83.045977%;
+        max-width: 83.045977%;
+        text-align: left;
+        @include media('<=lg') {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        @include media('<=md') {
+            flex-direction: column;   
+            align-items: baseline;
+        }
+        @include media('<sm') {
+            flex: 0 0 65%;
+            max-width: 65%;  
+        }
+    }
+    &__title {
+        font-family: 'NotoSans';
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.03em;
+        font-weight: 700;   
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        @include media('<=md') {
+            width: calc(100% - 27px);
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    &__date-remain {
+        width: 40px;
+        height: 24px;
+        margin-right: 15px;
+        font-size: 16px;
+        line-height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        border: 1px solid #cfd1d4;
+        color: #f70c4e;
+        font-weight: 500;
+        box-sizing: border-box;
+        @include media('<=md') {
+            margin-right: 7px;
+            width: 22px;
+            height: 14px;
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
+    &__deadline {
+        font-family: 'NotoSans';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #868b9b;
+        &.deadline-active {
+            color: #5d50ec;
+        }
+        @include media('<=md') {
+            font-size: 11px;
+            line-height: 14px;
+        }
+    }
+    &__action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 152px;
+        height: 52px;
+        font-family: 'NotoSans';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.025em;
+        background-image: url('../../assets/img/bg_btn_career.png');
+        background-size: contain;
+        color: #ffffff;
+        box-sizing: border-box;
+        &.career--active {
+            background-image: url('../../assets/img/bg_btn_career_active.png');
+            @include media('<=md') {
+                background-image: url('../../assets/img/bg_btn_career_active_mb.png'); 
+            }
+        }
+        @include media('<=md') {
+            width: 87px;
+            height: 28px;
+            background-image: url('../../assets/img/bg_btn_career_mb.png');
+            font-size: 11px;
+            line-height: 14px;
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+.career-empty {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 846px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    @include pfs('height', (
+        2560px: 846px,
+        360px: 383px
+    ));
+    &__title {
+        font-family: 'NotoSans';
+        font-size: 32px;
+        line-height: 28px;
+        letter-spacing: -0.03em;
+        font-weight: 700;
+        color: #111;
+        @include media('<=md') {
+            font-size: 20px;
+            line-height: 14px;
+        }
+    }
+    &__desc {
+        margin-top: 44px;
+        font-family: 'NotoSans';
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -0.025em;
+        font-weight: 400;
+        color: #111;
+        @include media('<=md') {
+            font-size: 12.5px;
+            line-height: 17.5px;       
+        }
+    }
+    &__link {
+        position: relative;
+        display: block;
+        margin-top: 54px;
+        font-family: 'NotoSans';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #111;
+        text-transform: uppercase;
+        text-decoration: solid;
+        @include media('<=md') {
+            font-size: 11px;
+            line-height: 14px;       
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: auto;
+            bottom: 0px;
+            background-color: #111;
+        }
+    }
+}
+.career-show {
+    display: flex;
+}

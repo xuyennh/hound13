@@ -1,0 +1,128 @@
+.sec-about {
+    padding-top: 162px;
+    padding-bottom: 175px;
+    box-sizing: border-box;
+    @include media('<1025px') {
+        padding-top: 140px;
+        padding-bottom: 100px;
+    }
+    @include media('<=md') {
+        padding-top: 66px;
+        padding-bottom: 50px;
+    }
+    &__inner {
+        margin: 0 -12px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+.sec-careers {
+    padding-top: 162px;
+    padding-bottom: 167px;
+    box-sizing: border-box;
+    @include media('<1025px') {
+        padding-top: 66px;
+        padding-bottom: 32px;
+    }
+    &__inner {
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+.sec-key-visual {
+    position: relative;
+}
+.sec-title {
+    display: inline-block;  
+    font-size: 56px;
+    line-height: 68px;
+    color: #111;
+    font-weight: 900;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    &.txt_light {
+        color: #fff;
+    }
+    @include media('<md') {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+.sec-game {
+    background-image: url('../../assets/img/bg_games.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 164px;
+    padding-bottom: 145px;
+    text-align: center;
+    box-sizing: border-box;
+    &__inner {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+        @include media('<=xl') {
+            padding: 0;   
+        }
+    }
+    @include media('<=xl') {
+        padding-top: 65px;    
+        padding-bottom: 22px;
+        background-image: url('../../assets/img/bg_games_mb.jpg');    
+    }
+}
+.sec-officeview {
+    background-image: url('../../assets/img/bg_office_view.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 162px;
+    padding-bottom: 145px;
+    box-sizing: border-box;
+    &__inner {
+        overflow: hidden;
+        text-align: center;
+    }
+    @include media('<=md') {
+        padding-top: 65px;
+        padding-bottom: 33px;
+        background-image: url('../../assets/img/bg_office_view_mb.jpg');
+    }
+}
+.sec-new {
+    padding-top: 162px;
+    padding-bottom: 137px;
+    &__inner {
+        text-align: center;
+        box-sizing: border-box;
+    }
+    &__container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+        @include media('<=xl') {
+            padding: 0;       
+            padding-left: 24px;
+        }
+    }
+    @include media('<=xl') {
+        padding-top: 66px;  
+        padding-bottom: 33px;    
+    }
+}
+.sec-contact {
+    position: relative;
+    height: 872px;
+    background-image: url('../../assets/img/bg_contact.jpg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    box-sizing: border-box;
+    @include media('<=md') {
+        height: 640px;
+        background-image: url('../../assets/img/bg_contact_mb.jpg');   
+    }
+}

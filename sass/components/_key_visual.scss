@@ -1,0 +1,159 @@
+.kv {
+    &__item {
+        .kv__img {
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            @include media('<=md') {
+                display: none;
+                background-position: top center;
+            }
+            &--mb {
+                display: none;
+                @include media('<=md') {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__content {
+        position: absolute;
+        top: -35px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+    &__txt {
+        display: block;
+        position: absolute;
+        bottom: 120px;
+        top: auto;
+        z-index: 1;
+        @include media('>xxl') {
+            bottom: 312px;
+        }
+        @include media('<=md') {
+            bottom: 78px;
+            left: 25px;
+        }
+        .kv__title {
+            display: block;
+            width: 586px;
+            height: 368px;
+            background-image: url('../../assets/img/kv_title.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            @include pfs('width', (
+                2560px: 586px,
+                360px: 217px
+	        ));
+            @include pfs('height', (
+                2560px: 368px,
+                360px: 141px
+	        ));
+            @include media('<=md') {
+                background-image: url('../../assets/img/kv_title_mb.png');
+            }
+        }
+        .kv__desc {
+            margin-top: 38px;
+            margin-left: 3px;
+            font-family: 'NotoSans';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.025em;
+            color: #9b9da1;
+            @include media('<1025px') {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+            @include media('<=md') {
+                font-size: 12px;
+                line-height: 17px;
+                margin-top: 16px;
+                margin-left: -2px;  
+            }
+        }
+    }
+    &__swiper {
+        position: relative;
+        & .swiper-pagination {
+            left: 50%;
+            transform: translateX(-700px);
+            bottom: 260px;
+            text-align: left;
+            & .swiper-pagination-bullet {
+                width: 96px;
+                height: 4px;
+                border-radius: 0;
+                background-color: #373941;
+                @include media('<=md') {
+                    width: 52px;
+                    height: 2px;
+                }
+            }
+            & .swiper-pagination-bullet-active {
+                background-color: #5d50ec;
+            }
+            @include media('<=xxl') {
+                left: 24px;
+                transform: none;
+                bottom: 100px;
+            }
+            @include media('<=md') {    
+                bottom: 73px;
+                left: 19px;
+            }
+        }
+    }
+    &__down {
+        position: absolute;
+        left: 50%;
+        bottom: 7px;
+        transform: translateX(-50%);
+        z-index: 1;
+        @include media('<=md') {
+            bottom: -12px;       
+        }
+    }
+}
+
+.kv-scroll-donw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__txt {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #ffffff;
+        @include media('<=md') {
+            display: none;
+        }
+    }
+    &__img {
+        display: block;
+        width: 18px;
+        height: 12px;
+        background-position: -559px -372px;
+        @include media('<=md') {
+            display: none;
+        }
+    }
+    &__img--mb {
+        display: none;
+        @include media('<=md') {
+            display: block;
+            background-position: -265px -54px;
+            width: 17px;
+            height: 10px;
+        }
+    }
+}

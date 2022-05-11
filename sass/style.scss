@@ -1,0 +1,38 @@
+//font
+@import 'fonts/fonts';
+
+// abstracts
+@import 'abstracts/_include-media';
+@import 'abstracts/_variables.scss';
+@import 'abstracts/_poly-fluild-sizing.scss';
+@import 'abstracts/_mixin.scss';
+@import 'abstracts/_helpers.scss';
+
+// base
+@import 'base/_reset.scss';
+@import 'base/_base.scss';
+@import 'base/_typography.scss';
+
+// components
+@import 'components/_logo.scss';
+@import 'components/_gnb.scss';
+@import 'components/_lang.scss';
+@import 'components/_key_visual.scss';
+@import 'components/_tab_about.scss';
+@import 'components/_people_list.scss';
+@import 'components/_ceo_message.scss';
+@import 'components/_history_list.scss';
+@import 'components/_game.scss';
+@import 'components/_filter_careers.scss';
+@import 'components/_careers_list.scss';
+@import 'components/_office_view.scss';
+@import 'components/_new_list.scss';
+@import 'components/_contact.scss';
+@import 'components/_gnb_mo.scss';
+@import 'components/_popup.scss';
+
+// layout
+@import 'layout/_header.scss';
+@import 'layout/_content';
+@import 'layout/_section';
+@import 'layout/_footer.scss';

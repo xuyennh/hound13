@@ -1,0 +1,125 @@
+.pagination-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+    box-sizing: border-box;
+    @include media('<=md') {
+        margin: 27px auto 0;  
+        width: 63px;     
+    }
+}
+.pagination-index,.pagination-total {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 28px;
+    color: #111;
+    @include media('<=md') {
+        font-size: 13px;
+        line-height: 14px;       
+    }
+}
+.pagination-prev {
+    width: 10px;
+    height: 18px;
+    margin-right: 17px;
+    background-position: -400px -428px;
+    &.pagination-button-disabled {
+        opacity: 0.35;
+        pointer-events: none;
+    }
+    @include media('<=md') {
+        background-position: -221px -74px;
+        width: 7px;
+        height: 12px;     
+        margin-right: 12px; 
+    } 
+}
+.pagination-next {
+    width: 10px;
+    height: 18px;
+    margin-left: 17px;
+    background-position: -414px -428px;
+    &.pagination-button-disabled {
+        opacity: 0.35;
+        pointer-events: none;
+    }
+    @include media('<=md') {
+        background-position: -232px -74px;
+        width: 7px;
+        height: 12px;   
+        margin-left: 12px;    
+    }
+}
+.pagination-index {
+    font-weight: 900;
+}
+.pagination-total {
+    font-weight: 600;
+}
+.pagination-white {
+    .pagination-prev {
+        background-image: url('../../assets/img/ico_arrow_white_left.png');
+    }
+    .pagination-next {
+        background-image: url('../../assets/img/ico_arrow_white_right.png');
+    }
+    .pagination-index,.pagination-total {
+        color: #c5c8cf;
+    }
+}
+.burger {
+    display: none;
+    background-position: -243px -55px;
+    width: 18px;
+    height: 15px;
+    @include media('<=md') {
+        display: block;
+    }
+}
+.header.header--active {
+    .burger {
+        background-position: -221px -55px;
+    }
+}
+.arrow-right {
+    width: 10px;
+    height: 16px;
+    margin-left: 54px;
+    background-position: -458px -428px;
+    @include media('<=xl') {
+        margin-left: 12px;       
+    }
+}
+.scroll-to-top {
+    position: absolute;
+    display: none;
+    right: 56px;    
+    bottom: calc(100% + 56px);
+    width: 60px;
+    height: 60px;
+    background-color: #f3f3f3;
+    border: 1px solid #e4e4e4;
+    z-index: 99;
+    box-sizing: border-box;
+    @include media('<=1024px') {
+        right: 24px;
+        width: 30px;
+        height: 30px;   
+        bottom: calc(100% + 24px);  
+    }
+}
+.arrow-up {
+    display: block;
+    width: 18px;
+    height: 12px;
+    margin: 0 auto;
+    background-position: -312px -404px;
+    background-repeat: no-repeat;
+    @include media('<=1024px') {
+        width: 9px;
+        height: 6px;
+        background: url('../../assets/img/ico_back_to_top_mb.png');
+        background-size: cover;
+    }
+}

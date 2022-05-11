@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 2560px;
+    background-color: transparent;
+    margin: 0 auto;
+    z-index: 99;
+    transition: .3s;
+    padding: 0 44px 0 50px;
+    box-sizing: border-box; 
+    &.header--active {
+        background-color: #fff;
+    }
+    @include media('<=md') {
+        padding: 0 24px;
+    }
+}
+.header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    @include media('<=md') {
+        height: 57px;
+    }
+}

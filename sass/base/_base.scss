@@ -1,0 +1,31 @@
+.wrap {
+    max-width: 2560px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+	height: auto;
+	border: 0;
+	vertical-align: middle;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 24px;
+    box-sizing: border-box;
+}
+.sp_hound13_pc {
+    background: url('../../assets/img/sp_hound13_pc.png') no-repeat top left;
+    background-size: 590px 504px;
+}
+@include media('<=md') {
+    .sp_hound13_mb {
+        background: url('../../assets/img/sp_hound13_mb.png') no-repeat top left;
+        background-size: 304px 216px;
+    }   
+}
+body.no-scroll {
+    overflow: hidden;
+}

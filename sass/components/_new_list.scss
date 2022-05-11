@@ -1,0 +1,105 @@
+.new {
+    margin-top: 58px;
+    padding-bottom: 70px;
+    position: relative;
+    overflow: hidden;
+    @include media('<=xl') {
+        margin-top: 32px;  
+        padding-bottom: 43px;
+    }
+    .swiper-button-prev {
+        top: auto;
+        left: 50%;
+        bottom: 2px;
+        width: 10px;
+        height: 18px;
+        transform: translateX(-40px);
+        background-position: -400px -428px;
+        @include media('<=md') {
+            background-position: -221px -74px;
+            width: 7px;
+            height: 12px;
+            bottom: 0;
+            transform: translateX(-43px);
+        }
+    }
+    .swiper-button-next {
+        top: auto;
+        right: 50%;
+        bottom: 2px;
+        width: 10px;
+        height: 18px;
+        transform: translateX(44px);
+        background-position: -414px -428px;
+        @include media('<=md') {
+            background-position: -232px -74px;
+            width: 7px;
+            height: 12px;
+            bottom: 0;
+            transform: translateX(20px);
+        }
+    }
+    .swiper-pagination-fraction {
+        font-size: 18px;
+        bottom: 0;
+        color: #111;
+        .swiper-pagination-current {
+            font-weight: 900;
+        }
+        .swiper-pagination-total {
+            font-weight: 600;
+            @include media('<=md') {
+                margin-right: 20px;       
+            }
+        }
+        @include media('<=md') {
+            font-size: 13px;       
+        }
+    }
+    &__slide {
+        width: 448px;
+        cursor: pointer;
+        @include media('<=xl') {
+            width: 293px;
+        }
+    }
+    &__cont {
+        display: flex;
+        padding: 43px 40px;
+        flex-direction: column;
+        border-right: 1px solid #d2d3e0;
+        border-left: 1px solid #d2d3e0;
+        border-bottom: 1px solid #d2d3e0;
+        @include media('<=xl') {
+            padding: 20px 20px 32px 21px;     
+        }
+    }
+    &__link {
+        display: block;
+    }
+    &__date {
+        font-weight: 700;
+        font-size: 16px;
+        text-align: left;
+        line-height: 34px;
+        color: #5d50ec;
+        @include media('<=xl') {
+            font-size: 12px;       
+        }
+    }
+    &__name {
+        font-family: 'NotoSans';
+        margin-top: 12px;
+        text-align: left;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+        letter-spacing: -0.03em;
+        color: #111;
+        @include media('<=xl') {
+            margin-top: 4px;
+            font-size: 20px;       
+            line-height: 25px;
+        }
+    }
+}

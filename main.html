@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hound13</title>
+    <link rel="stylesheet" href="assets/css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- [D] class header--active show when scroll down  -->
+         <!-- [D] sp_hound13_pc is class to css for sprites image on -->
+         <!-- [D] sp_hound13_mb is class to css for sprites image on -->
+        <header id="header" class="header">
+            <div class="header__wrap">
+                <h1 class="logo">   
+                    <a href="#none" class="logo__link">
+                        <span class="logo__img logo__img--scrolled sp_hound13_pc sp_hound13_mb"><span class="blind">hound 13</span></span>
+                    </a>
+                </h1>
+                <!-- gnb navigation- [D] .gnb__item--active is class show item is selected-->
+                <nav class="gnb">
+                    <ul class="gnb__list">  
+                        <li class="gnb__item">
+                            <a href="#about" class="gnb__link">About</a>
+                        </li>
+                        <li class="gnb__item">
+                            <a href="#games" class="gnb__link">Games</a>
+                        </li>
+                        <li class="gnb__item">
+                            <a href="#career" class="gnb__link">Careers</a>
+                        </li>
+                        <li class="gnb__item">
+                            <a href="#officeview" class="gnb__link">Office view</a>
+                        </li>
+                        <li class="gnb__item">
+                            <a href="#new" class="gnb__link">News</a>
+                        </li>
+                        <li class="gnb__item">
+                            <a href="#contact" class="gnb__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- burger -->
+                <div class="burger sp_hound13_mb"><span class="blind">burger</span></div>
+                <!-- [D] .btn-lang--active is class show item is selected -->
+                <div class="btn-lang">
+                    <button type="button" class="btn-lang__item btn-lang--active">KOR</button>
+                    <button type="button" class="btn-lang__item">ENG</button>
+                </div>
+                <!-- gnb - mobile -->
+                <!-- .nav-area--active is show menu when click burger -->
+                <nav class="nav-area">
+                    <a href="#none" class="logo-nav sp_hound13_mb"><span class="blind">hound 13</span></a>
+                    <ul class="gnb-mo">
+                        <li class="gnb-mo__item">
+                            <a href="#about" class="gnb-mo__link">About</a>
+                        </li>
+                        <li class="gnb-mo__item">
+                            <a href="#games" class="gnb-mo__link">Games</a>
+                        </li>
+                        <li class="gnb-mo__item">
+                            <a href="#career" class="gnb-mo__link">Careers</a>
+                        </li>
+                        <li class="gnb-mo__item">
+                            <a href="#officeview" class="gnb-mo__link">Office view</a>
+                        </li>
+                        <li class="gnb-mo__item">
+                            <a href="#new" class="gnb-mo__link">News</a>
+                        </li>
+                        <li class="gnb-mo__item">
+                            <a href="#contact" class="gnb-mo__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="btn-lang-mo">
+                        <button type="button" class="btn-lang-mo__item btn-lang-mo--active">KOR</button>
+                        <button type="button" class="btn-lang-mo__item">ENG</button>
+                    </div>
+                    <button type="button" class="btn-close"><span class="blind">close navigation</span></button>
+                </nav>
+            </div>
+        </header>
+        <!-- content -->
+        <main class="content">
+            <section class="sec-key-visual">
+                <h2 class="blind">Key Visual</h2>
+                <div class="kv">
+                    <!-- slide key_visual -->
+                    <div class="kv__swiper">
+                        <div class="swiper-wrapper kv__list">
+                            <div class="swiper-slide kv__item">
+                                <div class="kv__img" style="background-image: url('assets/img/bg_kv_1.jpg');"></div>
+                                <div class="kv__img kv__img--mb" style="background-image: url('assets/img/bg_kv_1_mb.jpg');"></div>
+                            </div>
+                            <div class="swiper-slide kv__item">
+                                <div class="kv__img" style="background-image: url('assets/img/bg_kv_2.jpg');"></div>
+                                <div class="kv__img kv__img--mb" style="background-image: url('assets/img/bg_kv_2_mb.jpg');"></div>
+                            </div>
+                            <div class="swiper-slide kv__item">
+                                <div class="kv__img" style="background-image: url('assets/img/bg_kv_3.jpg');"></div>
+                                <div class="kv__img kv__img--mb" style="background-image: url('assets/img/bg_kv_3_mb.jpg');"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"><span class="blind">key visual pagination</span></div>
+                    </div>
+                    <div class="kv__content">
+                        <div class="kv__txt">
+                            <span class="kv__title"><span class="blind">Hunt better games</span></span>
+                            <p class="kv__desc">우리는 전세계 게임 이용자가 플레이 할만한 가치가 <br> 느껴지는 게임을 만들기 위해 노력하고 있습니다</p>
+                        </div>
+                        <div class="kv__down">
+                            <a href="#about" class="kv-scroll-donw">
+                                <span class="kv-scroll-donw__txt">SCROLL</span>
+                                <span class="kv-scroll-donw__img sp_hound13_pc"><span class="blind">scroll down</span></span>
+                                <span class="kv-scroll-donw__img--mb sp_hound13_mb"><span class="blind">scroll down</span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section about -->
+            <!-- [D] .tab-about--active is class show tab selected -->
+            <section id="about" class="sec sec-about">
+                <div class="container">
+                    <div class="sec-about__inner">
+                        <h2 class="sec-title">About</h2>
+                        <ul class="tab-about">
+                            <li class="tab-about__item tab-about--active">
+                                <a href="#tab-about-people" class="tab-about__link">People</a>
+                            </li>
+                            <li class="tab-about__item">
+                                <a href="#tab-about-ceo" class="tab-about__link">Ceo Message</a>
+                            </li>
+                            <li class="tab-about__item">
+                                <a href="#tab-about-history" class="tab-about__link">History</a>
+                            </li>
+                        </ul>
+                        <div class="tab-about-content">
+                            <div id="tab-about-people" class="tab-content tab-about--active">
+                                <ul class="people-list">
+                                    <li class="people-list__item">
+                                        <div class="people-list__cont">
+                                            <div class="people-list__img people-list__img--value">
+                                                <img src="assets/img/ico_value.png" alt="value">
+                                            </div>
+                                            <div class="people-list__txt">
+                                                <strong class="people-list__title">Value</strong>
+                                                <p class="people-list__desc">게임의 가치에 대해 고민하는 사람들</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="people-list__item">
+                                        <div class="people-list__cont">
+                                            <div class="people-list__img people-list__img--fun">
+                                                <img src="assets/img/ico_fun.png" alt="fun">
+                                            </div>
+                                            <div class="people-list__txt">
+                                                <strong class="people-list__title">Fun</strong>
+                                                <p class="people-list__desc">즐거움과 재미에 몰입하는 사람들</p>
+                                            </div>
+                                        </div>    
+                                    </li>
+                                    <li class="people-list__item">
+                                        <div class="people-list__cont">
+                                            <div class="people-list__img people-list__img--limit">
+                                                <img src="assets/img/ico_limit.png" alt="limit">
+                                            </div>
+                                            <div class="people-list__txt">
+                                                <strong class="people-list__title">Limit</strong>
+                                                <p class="people-list__desc">경계와 한계를 넘어서는 사람들</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab-about-ceo" class="tab-content">
+                                <div class="ceo-message">
+                                    <div class="ceo-message__content">
+                                        <h3 class="ceo-message__title">안녕하세요.<br> 주식회사 하운드13 대표이사 박정식입니다.</h3>
+                                        <p class="ceo-message__desc">저희 하운드13은 유저들에게 "가치가 느껴지는 게임"을 만든다는 목표아래<br> 게임 업계 경력 10년 이상의 게임 전문가들이 모여 즐겁게 게임 개발을 하고 있습니다.</p>
+                                        <p class="ceo-message__desc">저희 하운드13의 임직원 모두는<br> 보다 나은 게임을 만들기 위해서 끊임없는 고민을 할 것이며,<br> 지속해서 좋은 게임을 통해, 여러분들께 재미와 즐거움을 드릴 수 있도록 하겠습니다.</p>
+                                        <p class="ceo-message__desc">고맙습니다.</p>
+                                        <strong>하운드13 대표이사 박정식</strong>
+                                    </div>
+                                    <div class="ceo-message__img">
+                                        <img src="assets/img/ico_hound13.png" alt="hound 13">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-about-history" class="tab-content">
+                                <div class="history-swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper history-swiper__list">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_1.jpg" alt="">
+                                                <span class="history-date">2021.07</span>
+                                                <span class="history-txt">가레나 (GARENA) 투자 유치</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_2.jpg" alt="">
+                                                <span class="history-date">2020.11</span>
+                                                <span class="history-txt">헌드레드소울 SEA서버 런칭</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_3.jpg" alt="">
+                                                <span class="history-date">2020.05</span>
+                                                <span class="history-txt">헌드레드소울 북미/유럽 서버 런칭</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_4.jpg" alt="">
+                                                <span class="history-date">2021.07</span>
+                                                <span class="history-txt">가레나 (garena) 투자 유치</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_1.jpg" alt="">
+                                                <span class="history-date">2021.07</span>
+                                                <span class="history-txt">가레나 (garena) 투자 유치</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_2.jpg" alt="">
+                                                <span class="history-date">2021.07</span>
+                                                <span class="history-txt">가레나 (garena) 투자 유치</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_3.jpg" alt="">
+                                                <span class="history-date">2021.07</span>
+                                                <span class="history-txt">가레나 (garena) 투자 유치</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_4.jpg" alt="">
+                                                <span class="history-date">2021.07</span>
+                                                <span class="history-txt">가레나 (garena) 투자 유치</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide history-swiper__item">
+                                            <div class="history-cont"> 
+                                                <img src="assets/img/item_his_2.jpg" alt="">
+                                                <span class="history-date">2021.07</span>
+                                                <span class="history-txt">가레나 (garena) 투자 유치</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev sp_hound13_pc sp_hound13_mb"></div>
+                                    <div class="swiper-button-next sp_hound13_pc sp_hound13_mb"></div>
+                                    <div class="swiper-counter">
+                                        <span class="current">1</span> / <span class="total">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section game -->
+            <!-- [D] .txt_light is class show title color white-->
+            <section id="games" class="sec sec-game">
+                <div class="sec-game__inner">
+                    <h2 class="sec-title txt_light">Games</h2>
+                    <div class="game-swiper game">
+                        <div class="swiper-wrapper game__list">
+                            <div class="swiper-slide game__item">
+                                <div class="game__img">
+                                    <img src="assets/img/item_game_1.jpg" alt="hundred soul">
+                                </div>
+                                <div class="game__content">
+                                    <strong class="game__name">Hundred soul</strong>
+                                    <p class="game__desc">압도적인 그래픽 퀄리티와 시그널 액션 타격감으로 리듬감 있는 <br>호쾌한 액션을 경험할 수 있습니다. 부관과 AI 협동 플레이로 <br>매력적이고 탄탄한 스토리 또한 함께 즐겨보세요.</p>
+                                    <a href="#none" class="game__link"><span class="game__txt">공식 사이트 바로가기</span><span class="sp_hound13_pc arrow-right "></span></a>
+                                    <ul class="game__download-list">
+                                        <li class="game__download-item">
+                                            <a href="#none" class="sp_hound13_pc sp_hound13_mb game__download--appstore">
+                                                <span class="blind">download on the app store</span>
+                                            </a>
+                                        </li>
+                                        <li class="game__download-item">
+                                            <a href="#none" class="sp_hound13_pc sp_hound13_mb game__download--googleplay">
+                                                <span class="blind">Get it on google play</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide cl game__item">
+                                <div class="game__img">
+                                    <img src="assets/img/item_game_1.jpg" alt="hundred soul">
+                                </div>
+                                <div class="game__content">
+                                    <strong class="game__name">Hundred soul</strong>
+                                    <p class="game__desc">압도적인 그래픽 퀄리티와 시그널 액션 타격감으로 리듬감 있는 <br>호쾌한 액션을 경험할 수 있습니다. 부관과 AI 협동 플레이로 <br>매력적이고 탄탄한 스토리 또한 함께 즐겨보세요.</p>
+                                    <a href="#none" class="game__link"><span class="game__txt">공식 사이트 바로가기</span> <span class="arrow_right"></span></a>
+                                    <ul class="game__download-list">
+                                        <li class="game__download-item">
+                                            <a href="#none" class="sp_hound13_pc sp_hound13_mb game__download--appstore">
+                                                <span class="blind">download on the app store</span>
+                                            </a>
+                                        </li>
+                                        <li class="game__download-item">
+                                            <a href="#none" class="sp_hound13_pc sp_hound13_mb game__download--googleplay">
+                                                <span class="blind">Get it on google play</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide cl game__item">
+                                <div class="game__img">
+                                    <img src="assets/img/item_game_1.jpg" alt="hundred soul">
+                                </div>
+                                <div class="game__content">
+                                    <strong class="game__name">Hundred soul</strong>
+                                    <p class="game__desc">압도적인 그래픽 퀄리티와 시그널 액션 타격감으로 리듬감 있는 <br>호쾌한 액션을 경험할 수 있습니다. 부관과 AI 협동 플레이로 <br>매력적이고 탄탄한 스토리 또한 함께 즐겨보세요.</p>
+                                    <a href="#none" class="game__link"><span class="game__txt">공식 사이트 바로가기</span> <span class="arrow_right"></span></a>
+                                    <ul class="game__download-list">
+                                        <li class="game__download-item">
+                                            <a href="#none" class="sp_hound13_pc sp_hound13_mb game__download--appstore">
+                                                <span class="blind">download on the app store</span>
+                                            </a>
+                                        </li>
+                                        <li class="game__download-item">
+                                            <a href="#none" class="sp_hound13_pc sp_hound13_mb game__download--googleplay">
+                                                <span class="blind">Get it on google play</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev sp_hound13_pc sp_hound13_mb"></div>
+                        <div class="swiper-button-next sp_hound13_pc sp_hound13_mb"></div>
+                        <div class="swiper-game-counter">
+                            <span class="current">1</span> / <span class="total">0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section careers-->
+            <!-- [D] .filter-career__active show part selected -->
+            <section id="career" class="sec sec-careers">
+                <div class="container">
+                    <div class="sec-careers__inner">
+                        <h2 class="sec-title">careers</h2>
+                        <ul class="filter-career">
+                            <li class="filter-career__item filter-career__active">
+                                <a href="#none" class="filter-career__link" data-item="all">전체 <span class="career_number">24</span></a>
+                            </li>
+                            <li class="filter-career__item">
+                                <a href="#none" class="filter-career__link" data-item="art">아트 <span class="career_number">9</span></a>
+                            </li>
+                            <li class="filter-career__item">
+                                <a href="#none" class="filter-career__link" data-item="game">게임기획 <span class="career_number">8</span></a>
+                            </li>
+                            <li class="filter-career__item">
+                                <a href="#none" class="filter-career__link" data-item="client">클라이언트 <span class="career_number">7</span></a>
+                            </li>
+                            <li class="filter-career__item">
+                                <a href="#none" class="filter-career__link" data-item="server">서버 <span class="career_number">0</span></a>
+                            </li>
+                            <li class="filter-career__item">
+                                <a href="#none" class="filter-career__link" data-item="business">경영지원 <span class="career_number">0</span></a>
+                            </li>
+                            <li class="filter-career__item">
+                                <a href="#none" class="filter-career__link" data-item="ect">기타 <span class="career_number">0</span></a>
+                            </li>
+                        </ul>
+                        <!-- [D] .deadline-active Showing the deadline of the job posting -->
+                        <!-- [D] .career-list__date-remain displayed the remaining days of the job posting -->
+                        <!-- [D] .career-show is show content about hound13 when no data -->
+                        <!-- [D] .is-hidden is hidden item not in that group-->
+                        <!-- [D] .career-active is show mive a link to the registered URL in the admin-->
+                        <div class="filter-career-content">
+                            <ul class="career-list">
+                                <li class="career-list__item filterable" data-item="art">
+                                    <div class="career-list__content">
+                                        <strong class="career-list__title">&lsquo;헌드레드 소울&rsquo; 엔진 프로그래머</strong>
+                                        <div class="career-list__info">
+                                            <span class="career-list__date-remain">D-1</span>
+                                            <span class="career-list__deadline deadline-active">~09.10</span>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="career-list__action career--active">입사 지원하기</a>
+                                </li>
+                                <li class="career-list__item filterable" data-item="game">
+                                    <div class="career-list__content">
+                                        <strong class="career-list__title">&lsquo;헌드레드 소울&rsquo; 이펙터 (VFX 아티스트)</strong>
+                                        <div class="career-list__info">
+                                            <span class="career-list__deadline">상시채용</span>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="career-list__action">입사 지원하기</a>
+                                </li>
+                                <li class="career-list__item filterable" data-item="client">
+                                    <div class="career-list__content">
+                                        <strong class="career-list__title">'&lsquo;헌드레드 소울&rsquo; 3D 배경 아티스트</strong>
+                                        <div class="career-list__info">
+                                            <span class="career-list__deadline">~09.30</span>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="career-list__action">입사 지원하기</a>
+                                </li>
+                                <li class="career-list__item filterable" data-item="art">
+                                    <div class="career-list__content">
+                                        <strong class="career-list__title">&lsquo;헌드레드 소울&rsquo; 캐릭터 리드 모델러</strong>
+                                        <div class="career-list__info">
+                                            <span class="career-list__deadline">상시채용</span>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="career-list__action">입사 지원하기</a>
+                                </li>
+                                <li class="career-list__item filterable" data-item="game">
+                                    <div class="career-list__content">
+                                        <strong class="career-list__title">&lsquo;헌드레드 소울&rsquo; 배경 모델러</strong>
+                                        <div class="career-list__info">
+                                            <span class="career-list__deadline">상시채용</span>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="career-list__action">입사 지원하기</a>
+                                </li>
+                                <li class="career-list__item filterable" data-item="game">
+                                    <div class="career-list__content">
+                                        <strong class="career-list__title">&lsquo;헌드레드 소울&rsquo; 액션 기획자</strong>
+                                        <div class="career-list__info">
+                                            <span class="career-list__deadline">상시채용</span>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="career-list__action">입사 지원하기</a>
+                                </li>
+                                <li class="career-list__item filterable" data-item="client">
+                                    <div class="career-list__content">
+                                        <strong class="career-list__title">&lsquo;헌드레드 소울&rsquo; 서버 시스템 프로그래머</strong>
+                                        <div class="career-list__info">
+                                            <span class="career-list__deadline">상시채용</span>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="career-list__action">입사 지원하기</a>
+                                </li>
+                                <li class="career-list__item filterable" data-item="art">
+                                    <div class="career-list__content">
+                                        <strong class="career-list__title">&lsquo;헌드레드 소울&rsquo; 서버 컨텐츠 프로그래머</strong>
+                                        <div class="career-list__info">
+                                            <span class="career-list__deadline">상시채용</span>
+                                        </div>
+                                    </div>
+                                    <a href="#none" class="career-list__action">입사 지원하기</a>
+                                </li>
+                            </ul>
+                            <div class="career-empty">
+                                <strong class="career-empty__title">현재 예정된 채용이 없습니다</strong>
+                                <p class="career-empty__desc">HOUND13 인재풀에 등록하고 싶으시다면 <br> 간단히 이력사항을 정리하여 언제든 제출하여 주시기 바랍니다.</p>
+                                <a href="#none" class="career-empty__link">hr@hound13.com</a>
+                            </div>
+                            <!-- [D]  .pagination-button-disabled shows that the button is disabled-->
+                            <div class="pagination-page">
+                                <button class="pagination-prev pagination-button-disabled sp_hound13_pc sp_hound13_mb"><span class="blind">previous page</span></button>
+                                <span class="pagination-index">1&nbsp;</span>
+                                <span class="pagination-total">/ 2</span>
+                                <button class="pagination-next sp_hound13_pc sp_hound13_mb"><span class="blind">next page</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section office view -->
+            <section id="officeview" class="sec sec-officeview">
+                <div class="container">
+                    <div class="sec-officeview__inner">
+                        <h2 class="sec-title txt_light">Office view</h2>
+                        <div class="officeview-swiper officeview">
+                            <div class="swiper-wrapper officeview__list">
+                                <div class="swiper-slide officeview__item">
+                                    <div class="officeview__left">
+                                        <div class="officeview__img" data-img="1">
+                                            <img src="assets/img/item_office_view.jpg" alt="office view" class="officeview__img--pc">
+                                            <img src="assets/img/item_office_view_mb.jpg" alt="office view" class="officeview__img--mo">
+                                        </div>
+                                    </div>
+                                    <div class="officeview__right">
+                                        <div class="officeview__right--top">
+                                            <div class="officeview__img" data-img="2">
+                                                <img src="assets/img/item_office_view_1.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_1_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                        </div>
+                                        <div class="officeview__right--bottom">
+                                            <div class="officeview__img" data-img="3">
+                                                <img src="assets/img/item_office_view_2.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_2_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                            <div class="officeview__img" data-img="4">
+                                                <img src="assets/img/item_office_view_3.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_3_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide officeview__item">
+                                    <div class="officeview__left">
+                                        <div class="officeview__img" data-img="5">
+                                            <img src="assets/img/item_office_view.jpg" alt="office view" class="officeview__img--pc">
+                                            <img src="assets/img/item_office_view_mb.jpg" alt="office view" class="officeview__img--mo">
+                                        </div>
+                                    </div>
+                                    <div class="officeview__right">
+                                        <div class="officeview__right--top">
+                                            <div class="officeview__img" data-img="6">
+                                                <img src="assets/img/item_office_view_1.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_1_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                        </div>
+                                        <div class="officeview__right--bottom">
+                                            <div class="officeview__img" data-img="7">
+                                                <img src="assets/img/item_office_view_2.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_2_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                            <div class="officeview__img" data-img="8">
+                                                <img src="assets/img/item_office_view_3.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_3_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide officeview__item">
+                                    <div class="officeview__left">
+                                        <div class="officeview__img" data-img="9">
+                                            <img src="assets/img/item_office_view.jpg" alt="office view" class="officeview__img--pc">
+                                            <img src="assets/img/item_office_view_mb.jpg" alt="office view" class="officeview__img--mo">
+                                        </div>
+                                    </div>
+                                    <div class="officeview__right">
+                                        <div class="officeview__right--top">
+                                            <div class="officeview__img" data-img="10">
+                                                <img src="assets/img/item_office_view_1.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_1_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                        </div>
+                                        <div class="officeview__right--bottom">
+                                            <div class="officeview__img" data-img="11">
+                                                <img src="assets/img/item_office_view_2.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_2_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                            <div class="officeview__img" data-img="12">
+                                                <img src="assets/img/item_office_view_3.jpg" alt="office view" class="officeview__img--pc">
+                                                <img src="assets/img/item_office_view_3_mb.jpg" alt="office view" class="officeview__img--mo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev sp_hound13_pc sp_hound13_mb"></div>
+                            <div class="swiper-button-next sp_hound13_pc sp_hound13_mb"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section new -->
+            <section id="new" class="sec sec-new">
+                <div class="sec-new__container">
+                    <div class="sec-new__inner">
+                        <h2 class="sec-title">news</h2>
+                        <div class="new-swiper new">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new.jpg" alt="garena">
+                                        <div class="new__cont">
+                                            <span class="new__date">2021.07.01</span>
+                                            <strong class="new__name">가레나로부터 200억 이상 대규모 투자 유치</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new_1.jpg" alt="hound 13">
+                                        <div class="new__cont">
+                                            <span class="new__date">2020.07.16</span>
+                                            <strong class="new__name">하운드13, 클라우드 MSP 기업 GS네오텍과 지속 협력</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new_2.jpg" alt="hundred soul">
+                                        <div class="new__cont">
+                                            <span class="new__date">2021.07.17</span>
+                                            <strong class="new__name">하운드13, 모바일 액션 RPG &lsquo;헌드레드 소울&rsquo; 사전예약</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new.jpg" alt="garena">
+                                        <div class="new__cont">
+                                            <span class="new__date">2021.07.01</span>
+                                            <strong class="new__name">가레나로부터 200억 이상 대규모 투자 유치</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new_1.jpg" alt="hound 13">
+                                        <div class="new__cont">
+                                            <span class="new__date">2021.07.01</span>
+                                            <strong class="new__name">가레나로부터 200억 이상 대규모 투자 유치</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new_2.jpg" alt="hundred soul">
+                                        <div class="new__cont">
+                                            <span class="new__date">2021.07.01</span>
+                                            <strong class="new__name">가레나로부터 200억 이상 대규모 투자 유치</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new.jpg" alt="garena">
+                                        <div class="new__cont">
+                                            <span class="new__date">2021.07.01</span>
+                                            <strong class="new__name">가레나로부터 200억 이상 대규모 투자 유치</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new_1.jpg" alt="hound 13">
+                                        <div class="new__cont">
+                                            <span class="new__date">2021.07.01</span>
+                                            <strong class="new__name">가레나로부터 200억 이상 대규모 투자 유치</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new__slide">
+                                    <div class="new__item">
+                                        <img src="assets/img/item_new_2.jpg" alt="hundred soul">
+                                        <div class="new__cont">
+                                            <span class="new__date">2021.07.01</span>
+                                            <strong class="new__name">가레나로부터 200억 이상 대규모 투자 유치</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev sp_hound13_pc sp_hound13_mb"></div>
+                            <div class="swiper-button-next sp_hound13_pc sp_hound13_mb"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section contact -->
+            <section id="contact" class="sec sec-contact">
+                <div class="container">
+                    <div class="contact">
+                        <h2 class="sec-title">Contact</h2>
+                        <p class="contact__desc">[06233] 서울특별시 서울 강남구 테헤란로4길 5 해암빌딩 7,8층</p>
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <strong class="contact__title">게임/환불문의</strong>
+                                <a href="#none" class="contact__link">hs_help01@hound13.com</a>
+                            </li>
+                            <li class="contact__item">
+                                <strong class="contact__title">FAX</strong>
+                                <span>02-508-1513</span>
+                            </li>
+                            <li class="contact__item">
+                                <strong class="contact__title">사업문의</strong>
+                                <a href="#none" class="contact__link">business@hound13.com</a>
+                            </li>
+                            <li class="contact__item">
+                                <strong class="contact__title">채용문의</strong>
+                                <a href="#none" class="contact__link">hr@hound13.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <button type="button" class="scroll-to-top">
+                <span class="blind">back to top</span>
+                <span class="arrow-up sp_hound13_pc"></span>
+            </button>
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <a href="#none" class="logo-footer__link sp_hound13_pc sp_hound13_mb">
+                            <span class="blind">hound 13</span>
+                        </a>
+                        <span class="copyright">© HOUND13. All Rights Reserved.</span>
+                    </div>
+                    <ul class="rule-list">
+                        <li class="rule-item">
+                            <a href="" class="rule-link">운영정책</a>
+                        </li>
+                        <li class="rule-item">
+                            <a href="" class="rule-link">서비스 이용약관</a>
+                        </li>
+                        <li class="rule-item">
+                            <a href="" class="rule-link">개인정보 처리방침</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    
+    <!-- popup-officeview -->
+    <!-- .popup--active is show popup when click -->
+    <div class="popup popup-officeview">
+        <div class="popup__inner">
+            <div class="popup-officeview-swiper popup-officeview__wrap swiper-container">
+                <div class="swiper-wrapper popup-officeview__list">
+                    <div class="swiper-slide popup-officeview__item">
+                        <img src="assets/img/item_office_view_1_popup.jpg" alt="office view" class="popup-officeview__img">
+                    </div>
+                    <div class="swiper-slide popup-officeview__item">
+                        <img src="assets/img/item_office_view_1_popup.jpg" alt="office view" class="popup-officeview__img">
+                    </div>
+                    <div class="swiper-slide popup-officeview__item">
+                        <img src="assets/img/item_office_view_1_popup.jpg" alt="office view" class="popup-officeview__img">
+                    </div>
+                    <div class="swiper-slide popup-officeview__item">
+                        <img src="assets/img/item_office_view_1_popup.jpg" alt="office view" class="popup-officeview__img">
+                    </div>
+                    <div class="swiper-slide popup-officeview__item">
+                        <img src="assets/img/item_office_view_1_popup.jpg" alt="office view" class="popup-officeview__img">
+                    </div>
+                    <div class="swiper-slide popup-officeview__item">
+                        <img src="assets/img/item_office_view_1_popup.jpg" alt="office view" class="popup-officeview__img">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="btn-close-popup"></div>
+    </div>
+    <!-- popup-news -->
+    <div class="popup popup-new">
+        <div class="popup-new__wrap">
+            <div class="popup-new__img">
+                <img src="assets/img/item_new_popup.jpg" alt="">
+            </div>
+            <div class="popup-new__content">
+                <div class="scrollbar"></div>
+                <div class="popup-new__inner scrollable">
+                    <span class="popup-new__date">2021.07.01</span>
+                    <strong class="popup-new__title">가레나로부터 200억 이상 대규모 투자 유치</strong>
+                    <div class="popup-new__img popup-new__img--mo">
+                        <img src="assets/img/item_new_popup.jpg" alt="">
+                    </div>
+                    <p class="popup-new__desc">하운드13(대표 박정식)이 글로벌 게임 개발사 겸 퍼블리셔 가레나(Garena)에서 200억원 이상의 대규모 투자를 유치했다고 밝혔다. 하운드13은 중국·동아시아 시장 등에서 높은 인기를 얻은 &lsquo;드래곤네스트&rsquo; 총괄 디렉터 출신 박정식 대표를 중심으로 &lsquo;드래곤네스트&rsquo;, &lsquo;던전 스트라이커&rsquo; 제작에 참가한 핵심 인력들이 설립한 게임 스타트업이다.</p>
+                    <p class="popup-new__desc">2019년 1월 첫 작품인 모바일 액션 RPG &lsquo;헌드레드 소울&rsquo;을 공개하며 수준 높은 그래픽과 스타일리시한 액션 연출로 호평받았으며, 스타트업으로는 드물게 자체 서비스를 진행해 2년이 지난 지금까지도 국내를 포함해 글로벌 140개국에서 서비스를 제공하고 있다.</p>
+                    <P class="popup-new__desc">하운드13은 이번 대규모 투자 유치와 함께 PC·모바일 크로스 플랫폼을 바탕으로 하는 신규 프로젝트 &lsquo;Project D&rsquo; 와 PC 플랫폼을 기반으로 </P>
+                </div>
+            </div>
+        </div>
+        <div class="btn-close-popup btn-close-popup--mo"></div>
+    </div>
+    <div class="dimmed">
+        <div class="btn-close-popup"></div>
+        <span class="blind">dimmed</span>
+    </div>
+    <script src="assets/js/libs/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/libs/jquery-ui.js"></script>
+    <script src="assets/js/libs/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

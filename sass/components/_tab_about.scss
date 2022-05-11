@@ -1,0 +1,65 @@
+.tab-about {
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+    @include media('<=md') {
+        margin-top: 22px;       
+    }
+    &__item {
+        margin-left: 45px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &.tab-about--active {
+            & .tab-about__link {
+                color: #5d50ec;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -6px;   
+                    width: 100%;
+                    height: 4px;
+                    transition: width .5s ease-in-out;
+                    background-color: #5d50ec;
+                }
+            }
+        }
+        @include media('<md') {
+            margin-left: 23px;       
+        }
+    }
+    &__link {
+        position: relative;
+        font-size: 24px;
+        color: #111;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include media('<md') {
+            font-size: 16px;
+            line-height: 32px;       
+        }
+    }
+}
+.tab-about-content {
+    & .ceo-message {
+        padding-top: 158px;
+        padding-bottom: 87px;
+        @include media('<1025px') {
+            padding-top: 51px;
+        }
+    }
+    & .people-list {
+        padding-top: 70px;
+        @include media('<=md') {
+            padding-top: 33px;       
+        }
+    }
+    & .history-swiper {
+        padding-top: 70px;  
+        margin-bottom: 107px;
+        @include media('<=md') {
+            padding-top: 33px;      
+            margin-bottom: 146px; 
+        }
+    }
+}

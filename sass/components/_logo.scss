@@ -1,0 +1,43 @@
+.logo {
+    &__img {
+        display: block;
+        background-position: -312px -372px;;
+        width: 206px;
+        height: 28px;
+        @include media('<=md') {
+            width: 148px;
+            height: 20px;
+            background-position: 0 -145px;
+        }
+    }
+}
+.header.header--active {
+    .logo {
+        &__img {
+            &.logo__img--scrolled {
+                display: block;
+                background-position: 0 -428px;
+                @include media('<=md') {
+                    background-position: 0 -169px;
+                }
+            }
+        }
+    }
+}
+.logo-footer {
+    &__link {
+        display: block;
+        background-position: -210px -428px;
+        width: 188px;
+        height: 26px;
+        @include media('<=md') {
+            background-position: 0 -193px;
+            width: 141px;
+            height: 19px;
+            margin-top: 14px;
+        }
+    }
+    @include media('<=md') {
+        margin-top: 24px;       
+    }
+}

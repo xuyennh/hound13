@@ -1,0 +1,85 @@
+.footer {
+    position: relative;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+        margin-right: -24px;
+        box-sizing: border-box;
+        @include media('<xxl') {
+            margin-right: 0;       
+        }
+        @include media('<=md') {
+            flex-direction: column-reverse;
+            padding: 20px 0;
+        }
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        @include media('<=md') {
+            flex-direction: column;       
+        }
+    }
+}
+
+.copyright {
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    @include media('<=xl') {
+        margin-left: 10px;
+        font-size: 9px;
+        line-height: 13px;
+    }
+    @include media('<=md') {
+        margin-left: 0;       
+    }
+}
+.rule-list {
+    display: flex;
+    margin-top: 6px;
+}
+.rule-item {
+    margin-left: 28px;
+    &:before {
+        content: '';
+        display: inline-block;
+        margin-right: 26px;
+        vertical-align: middle;
+        width: 2px;
+        height: 18px;
+        background-color: #c6c6c6;
+        &:first-child {
+            display: none;
+        }
+        @include media('<=xl') {
+            height: 9px;      
+            margin-right: 11px; 
+        }
+    }
+    &:first-child:before {
+        display: none;
+    }
+    @include media('<=xl') {
+        margin-left: 11px;       
+    }
+}
+.rule-link {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: -0.025em;
+    font-family: 'NotoSans';
+    font-weight: 400;
+    color: #111;
+    vertical-align: middle;
+    @include media('<=xl') {
+        font-size: 10px;
+        line-height: 15px;       
+    }
+}

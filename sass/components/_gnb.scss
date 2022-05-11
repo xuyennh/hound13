@@ -1,0 +1,94 @@
+.gnb {
+    width: 732px;
+    margin-right: 42px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    @include media('<=lg') {
+        margin-right: 0;       
+    }
+    @include media('<=md') {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        @include media('<xxl') {
+            margin-left: 60px;
+        }
+        @include media('<xl') {
+            margin-left: 40px;
+        }
+        @include media('<=lg') {
+            margin-left: 20px;
+        }
+    }
+    &__item {
+        margin-left: 39px;
+        @include media('<xl') {
+            margin-left: 20px;
+        }
+        @include media('<=lg') {
+            margin-left: 15px;       
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        .gnb__link {
+            position: relative;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 32px;
+            transition: .3s;
+            @include media('<xxl') {
+                font-size: 14px;       
+            }
+            @include media('<xl') {
+                font-size: 12px;
+            }
+            @include media('<=lg') {
+                font-size: 10px;
+            }
+        }
+        .gnb__link::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            height: 4px;
+            width: 0%;
+            transition: width .4s;
+        }
+        &--active {
+            .gnb__link {
+                color: #5d50ec;
+            }
+        }
+        &--active {
+            & .gnb__link::before {
+                width: 100%;
+                background-color: #5d50ec;
+                transition: width .4s;
+            }
+        }
+    }
+    // mobile
+    &.gnb-mobile {
+        display: none;
+        .gnb__list {
+            flex-direction: column;
+        }
+    }
+}
+.header.header--active {
+    .gnb__item {
+        .gnb__link {
+            color: #111111;
+        }
+        &--active {
+            .gnb__link {
+                color: #5d50ec;
+            }
+        }
+    }
+}

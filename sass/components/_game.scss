@@ -1,0 +1,242 @@
+.game {
+    position: relative;
+    margin-top: 58px;
+    padding-bottom: 63px;
+    @include media('<=xl') {
+        margin-top: 31px;       
+    }
+    &__item {
+        display: flex;
+        position: relative;
+        @include media('<=xl') {
+            flex-direction: column;       
+        }
+    }
+    &__img {
+        max-width: 1080px;
+        flex: 0 0 1080px;
+        box-sizing: border-box;
+        transition: all .5s;
+        @include media('<=xxl') {
+            flex: 0 0 900px;
+            max-width: 900px;
+        }
+        @include media('<=xl') {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    &__content {
+        flex: 0 0 448px;
+        max-width: 448px;
+        margin-top: 51px;
+        position: absolute;
+        left: 0;
+        text-align: left;
+        opacity: 0;
+        transform: translateY(-150px);
+        transition: all .7s;
+        z-index: 1;
+        @include media('<=xxl') {
+            left: 32px;
+            margin-top: 10px;
+        }
+        @include media('<=xl') {
+            position: static;
+            transform: translateY(0);
+            margin-top: 26px;
+            flex: 0 0 100%;       
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+    &__name {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+        @include media('<=xxl') {
+            font-size: 35px;
+        }
+        @include media('<=md') {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+    &__desc {
+        margin-top: 6px;
+        font-family: 'NotoSans';
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+        font-weight: 400;
+        @include media('<=xxl') {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        @include media('<=md') {
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 42px;
+        width: 264px;
+        height: 56px;
+        background-image: url('../../assets/img/bg_btn_game.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include media('<=xxl') {
+            margin: 31px auto 0;    
+        }
+        @include media('<=md') {
+            margin: 24px auto 0;   
+            background-image: url('../../assets/img/bg_btn_game_mb.png');
+            width: 206px;
+            height: 42px;    
+            justify-content: center;
+        }
+    }
+    &__txt {
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.025em;
+        @include media('<=md') {
+            font-size: 16px;   
+            line-height: 24px;    
+        }
+    }
+    .swiper-pagination-progressbar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 118px);
+        background-color: #7a70e7;
+        & .swiper-pagination-progressbar-fill {
+            background-color: #e4e2fa;
+        }
+        @include media('<=xxl') {
+            width: calc(100% - 150px);
+            left: 24px;       
+        }
+        @include media('<=md') {
+            width: calc(100% - 126px);
+            bottom: 17px;
+            height: 2px;       
+        }
+    }
+    .swiper-button-prev, .swiper-button-next {
+        bottom: -6px;
+        top: auto;
+        width: 10px;
+        height: 18px;
+        @include media('<=md') {
+            width: 7px;
+            height: 12px;     
+            bottom: 12px;  
+        }
+    }
+    .swiper-button-next {
+        right: 20px;
+        background-position: -442px -428px;
+        @include media('>xxl') {
+            right: 7px;
+        }
+        @include media('<=md') {
+            background-position: -254px -74px;
+            right: 24px;
+        }
+    }
+    .swiper-button-prev {
+        left: auto;
+        right: 100px;
+        background-position: -428px -428px;
+        @include media('>xxl') {
+            right: 84px;
+        }
+        @include media('<=md') {
+            right: 79px;
+            background-position: -243px -74px;
+        }
+    }
+    .swiper-slide-active {
+        .game__img {
+            // left: auto;
+            transform: translateX(312px);
+            @include media('<=xl') {
+                transform: translate(0);  
+            }
+        }
+        .game__content {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
+.game__download-list {
+    display: flex;
+    margin-top: 20px;
+    @include media('<=xl') {
+        justify-content: center;
+        margin-top: 18px;       
+    }
+}
+.game__download-item {
+    margin-left: 12px;
+    &:first-child {
+        margin-left: 0;
+    }
+    @include media('<=xl') {
+        margin-left: 5px;       
+    }
+}
+.game__download--appstore {
+    display: block;
+    background-position: -136px -460px;
+    width: 120px;
+    height: 40px;
+    @include media('<=md') {
+        background-position: -221px -27px;
+        width: 72px;
+        height: 24px;
+    }
+}
+.game__download--googleplay {
+    display: block;
+    background-position: 0 -460px;
+    width: 132px;
+    height: 40px;
+    @include media('<=md') {
+        background-position: -221px 0;
+        width: 79px;
+        height: 23px;
+    }
+}
+.swiper-game-counter {
+    position: absolute;
+    bottom: -11px;
+    right: 32px;  
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    &.current {
+        font-weight: 900;
+    }
+    @include media('<=xxl') {
+        right: 44px;       
+    }
+    @include media('<=md') {
+        font-size: 13px;
+        line-height: 14px;     
+        bottom: 12px;
+        right: 42px;  
+    }
+}

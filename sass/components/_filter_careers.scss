@@ -1,0 +1,76 @@
+.filter-career {
+    display: flex;
+    margin-top: 54px;
+    @include media('<=md') {
+        margin-top: 24px;
+        padding-bottom: 15px;
+        overflow-x: scroll;    
+    }
+    &__item {
+        margin-left: 25px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &.filter-career__active {
+            .filter-career__link {
+                color: #5d50ec;
+            }
+            .career_number {
+                background-color: #5d50ec;
+            }
+            .filter-career__link::before {
+                content: '';
+                position: absolute;
+                bottom: -14px;
+                width: 100%;
+                height: 4px;
+                transition: width .5s ease-in-out;
+                background-color: #5d50ec;
+                @include media('<=md') {
+                    bottom: -8px;
+                    height: 2px;       
+                }
+            }
+        }
+        @include media('<=md') {
+            margin-left: 11px;       
+        }
+    }
+    &__link {
+        position: relative;
+        font-family: 'NotoSans';
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        letter-spacing: -0.025em;
+        white-space: nowrap;
+        color: #111;
+        @include media('<=xl') {
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+}
+.career_number {
+    display: inline-block;
+    font-family: 'Roboto';
+    padding: 8px 0;
+    margin-left: 2px;
+    width: 40px;
+    height: 24px;
+    color: #ffffff;
+    background-color: #b9bbc8;
+    font-size: 16px;
+    line-height: 8.84px;
+    font-weight: 700;
+    border-radius: 15px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    @include media('<=md') {
+        padding: 1px 0;
+        width: 24px;
+        height: 15px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+}

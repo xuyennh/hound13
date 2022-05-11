@@ -1,0 +1,125 @@
+.history-swiper {
+    position: relative;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 12px;  
+    }
+    &__item {
+        width: 448px;
+        @include media('<=md') {
+            width: 400px;       
+        }
+        @include media('<=sm') {
+            width: 269px;       
+        }
+    }
+    .swiper-pagination-progressbar {
+        top: 100%;
+        margin-top: 102px;
+        left: 12px;
+        width: calc(100% - 152px);
+        background-color: #cfcfcf;
+        & .swiper-pagination-progressbar-fill {
+            background-color: #373737;
+        }
+        @include media('<=md') {
+            margin-top: 140px;
+            width: 75%;
+            height: 2px;
+        }
+        @include media('<sm') {
+            width: 232px;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next {
+        top: auto;
+        margin-top: 91px;
+        width: 10px;
+        height: 18px;
+        @include media('<=md') {
+            margin-top: 135px;    
+            width: 7px;
+            height: 12px   
+        }
+    }
+    .swiper-button-next {
+        right: 12px;
+        background-position: -414px -428px;
+        @include media('<=md') {
+            background-position: -232px -74px;
+        }
+    }
+    .swiper-button-prev {
+        left: auto;
+        right: 65px;       
+        background-position: -400px -428px;
+        @include media('>1440px') {
+            right: 99px;  
+        }
+        @include media('<=md') {
+            right: 69px;
+            background-position: -221px -74px;    
+        }
+    }
+}
+.history-date {
+    display: block;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 24px;
+    color: #5d50ec;
+    font-weight: 600;
+    line-height: 28px;
+    @include media('<=xl') {
+        font-size: 20px;       
+        line-height: 25px;
+    }
+    @include media('<=sm') {
+        margin-top: 20px;
+        font-size: 16px;       
+        line-height: 21px;
+    }
+}
+.history-txt {
+    font-family: 'NotoSans';
+    display: block;
+    font-size: 24px;
+    margin-top: 6px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 34px;
+    color: #111;
+    letter-spacing: -0.025em;
+    @include media('<=md') {
+        font-size: 20px;       
+        line-height: 25px;
+    }
+    @include media('<=sm') {
+        margin-top: 8px;
+        font-size: 16px;       
+        line-height: 21px;
+    }
+}
+.swiper-counter {
+    position: absolute;
+    margin-top: 88px;
+    top: auto;  
+    right: 25px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #111;
+    font-weight: 700;
+    &.current {
+        font-weight: 900;
+    }
+    @include media('>1440px') {
+        right: 43px;  
+    }
+    @include media('<=md') {
+        font-size: 13px;
+        line-height: 24px;   
+        margin-top: 129px;
+        right: 31px;    
+    }
+}

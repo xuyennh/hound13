@@ -1,0 +1,11 @@
+.tab-content {
+    display: none;
+}
+.tab-content.tab-about--active,.tab-career__active {
+    display: block;
+    animation: fadein ease 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
